@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=1.4"]
+build-backend = "maturin"
+
+[project]
+name = "crop-row-connector"
+version = "0.1.0"
+description = "Python scripts for crop-row-connector"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Crop Row Connector maintainers", email = "devnull@example.com" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "pandas",
+    "tqdm",
+    "matplotlib",
+]
+
+[tool.maturin]
+module-name = "crop_row_connector._native"
+python-source = "."
+
+
+[project.scripts]
+crop-row-connector = "crop_row_connector.__main__:_main"

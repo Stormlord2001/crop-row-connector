@@ -1,0 +1,18 @@
+[package]
+name = "crop_row_connector"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "_native"
+crate-type = ["cdylib"]
+
+[dependencies]
+indicatif = "0.18"
+ndarray = "0.15.3"
+numpy = "0.21"
+rayon = "1.11.0"
+
+[dependencies.pyo3]
+version = "0.21"
+features = ["extension-module"]

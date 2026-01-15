@@ -38,7 +38,7 @@ parser.add_argument(
 )
 parser.add_argument(
     "--distance_tolerance",
-    default=10,
+    default=0.1,
     type=float,
     help='Distance tolerance for two crop rows to be connected'
 )

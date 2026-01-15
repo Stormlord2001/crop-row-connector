@@ -9,6 +9,7 @@ The dataset includes two main files:
 
 
 A visual representation of all the points in the orthomosaic can be seen below:
+
 .. figure:: ../figures/Field_detected.png
     detected crop rows in an orthomosaic
 
